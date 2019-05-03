@@ -20,8 +20,8 @@ class Artist
       self.all.detect{|artist| artist.name == name}
   end 
   
-  def self.find_or_create_by_name(artist_name)
-      self.find_by_name(artist_name) || self.new(artist_name)
+  def self.find_or_create_by_name(name)
+      self.find_by_name(name) || self.new(name)
   end 
   
   def add_song(song)
